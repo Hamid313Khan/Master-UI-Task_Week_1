@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 class ReusedTextField extends StatelessWidget {
-  ReusedTextField(this.text);
+  const ReusedTextField(this.text);
 
-  String? text;
+ final String? text;
 
 
   @override

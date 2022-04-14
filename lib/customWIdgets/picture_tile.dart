@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 class PictureTile extends StatelessWidget {
-  PictureTile(this.image_value,this.text,this.place_text);
-String image_value;
-String text;
-String place_text;
+  const PictureTile(this.imageValue,this.text,this.placeText);
+final String imageValue;
+final String text;
+final String placeText;
 
   @override
   Widget build(BuildContext context) {
@@ -14,15 +14,15 @@ String place_text;
         child: ListTile(
         leading:
 
-        ClipRRect( borderRadius: BorderRadius.only(
+        ClipRRect( borderRadius: const BorderRadius.only(
         topLeft: Radius.circular(10.0),
         topRight: Radius.circular(10.0),
         bottomLeft: Radius.circular(10.0),
         bottomRight: Radius.circular(10.0),
         ),
-        child: Image.network(image_value),),
+        child: Image.network(imageValue),),
         title: Text(text),
-        subtitle: Text(place_text)
+        subtitle: Text(placeText)
         ),
         ),
       ],

@@ -1,13 +1,9 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'second_Screen.dart';
 import 'first_Screen.dart';
-import 'third_Screen.dart';
 
 void main() {
   runApp(const MyApp());
 }
-
 
 class MyApp extends StatefulWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -21,7 +17,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: First_Screen(),
+      home: FirstScreen(),
       // initialRoute: '/',
       // routes: {
       //   '/': (context) => First_Screen(),
@@ -30,4 +26,3 @@ class _MyAppState extends State<MyApp> {
     );
   }
 }
-

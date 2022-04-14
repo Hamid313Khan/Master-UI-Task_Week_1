@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:ui_task/second_Screen.dart';
 import 'package:ui_task/third_Screen.dart';
 import 'customWIdgets/reusedtextfield.dart';
 import 'fourth_screen.dart';
-class First_Screen extends StatefulWidget {
+
+class FirstScreen extends StatefulWidget {
   @override
-  State<First_Screen> createState() => First_Screen_State();
+  State<FirstScreen> createState() => First_Screen_State();
 }
 
-class First_Screen_State extends State<First_Screen> {
+class First_Screen_State extends State<FirstScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,74 +20,77 @@ class First_Screen_State extends State<First_Screen> {
               alignment: Alignment.topLeft,
               child: const Text(
                 'Log in to Muz',
-                style: const TextStyle(
+                style: TextStyle(
                     fontSize: 25.0,
                     fontWeight: FontWeight.bold,
                     color: Colors.black),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20.0,
             ),
             Container(
               alignment: Alignment.topLeft,
-              child: Text(
+              child: const Text(
                 'Email Address',
                 style: TextStyle(color: Colors.grey),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10.0,
             ),
-            ReusedTextField('monik@bork.wp.pl'),
-            SizedBox(
+            const ReusedTextField('monik@bork.wp.pl'),
+            const SizedBox(
               height: 20.0,
             ),
             Container(
               alignment: Alignment.topLeft,
-              child: Text(
+              child: const Text(
                 'Password',
                 style: TextStyle(color: Colors.grey),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10.0,
             ),
-            ReusedTextField('password'),
-            SizedBox(
+            const ReusedTextField('password'),
+            const SizedBox(
               height: 10.0,
             ),
             Container(
               alignment: Alignment.topLeft,
               child: TextButton(
                 onPressed: () {
-
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => const FourthScreen()),
-                    );
-
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const FourthScreen()),
+                  );
                 },
-                child: Text('Forgot password?'),
+                child: const Text('Forgot password?'),
               ),
             ),
-            SizedBox(height: 250.0,),
+            const SizedBox(
+              height: 250.0,
+            ),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
-                minimumSize: Size(440,70),
-                primary: Color(0xffe7cdc6),
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0),),
+                minimumSize: const Size(440, 70),
+                primary: const Color(0xffe7cdc6),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
               ),
-
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) =>  ThirdScreen()),
+                  MaterialPageRoute(builder: (context) => ThirdScreen()),
                 );
               },
-
-              child: Text('Log in',style: TextStyle(fontSize: 30.0),),
-
+              child: const Text(
+                'Log in',
+                style: TextStyle(fontSize: 30.0),
+              ),
             )
           ],
         ),
