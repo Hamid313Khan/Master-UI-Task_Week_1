@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:ui_task/fourth_screen.dart';
 import 'package:ui_task/second_Screen.dart';
 import 'customWIdgets/picture_tile.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:ui_task/customWIdgets/custom_botton.dart';
 
 class ThirdScreen extends StatefulWidget {
   @override
@@ -89,25 +91,7 @@ class _ThirdScreenState extends State<ThirdScreen> {
                   'https://images.pexels.com/photos/733853/pexels-photo-733853.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
                   'This ia the most historical mesuem of all time',
                   'TORONTO'),
-              ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  minimumSize: const Size(440, 70),
-                  primary: const Color(0xffe7cdc6),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10.0),
-                  ),
-                ),
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const SecondScreen()),
-                  );
-                },
-                child: const Text(
-                  'BUY TICKET',
-                  style: TextStyle(fontSize: 30.0),
-                ),
-              ),
+              CustomButton('Hi There', FourthScreen())
             ],
           ),
         )

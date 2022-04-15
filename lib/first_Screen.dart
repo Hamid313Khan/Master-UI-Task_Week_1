@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:ui_task/second_Screen.dart';
 import 'package:ui_task/third_Screen.dart';
 import 'customWIdgets/reusedtextfield.dart';
-import 'fourth_screen.dart';
+import 'package:ui_task/customWIdgets/custom_botton.dart';
 
 class FirstScreen extends StatefulWidget {
   @override
@@ -64,7 +65,7 @@ class First_Screen_State extends State<FirstScreen> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => const FourthScreen()),
+                        builder: (context) => const SecondScreen()),
                   );
                 },
                 child: const Text('Forgot password?'),
@@ -73,25 +74,7 @@ class First_Screen_State extends State<FirstScreen> {
             const SizedBox(
               height: 250.0,
             ),
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                minimumSize: const Size(440, 70),
-                primary: const Color(0xffe7cdc6),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10.0),
-                ),
-              ),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => ThirdScreen()),
-                );
-              },
-              child: const Text(
-                'Log in',
-                style: TextStyle(fontSize: 30.0),
-              ),
-            )
+            CustomButton('Log in', ThirdScreen())
           ],
         ),
       ),
