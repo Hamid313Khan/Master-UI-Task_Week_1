@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:ui_task/second_Screen.dart';
 
 class CustomButton extends StatelessWidget {
-   CustomButton(this.buttonText, this.onPressed);
-String? buttonText;
-final onPressed;
+  CustomButton(this.buttonText, this.onPressed);
+  String? buttonText;
+  final onPressed;
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
@@ -21,8 +21,9 @@ final onPressed;
           MaterialPageRoute(builder: (context) => onPressed),
         );
       },
-      child: Text(buttonText!,style: TextStyle(fontSize: 30.0),
-
+      child: Text(
+        buttonText!,
+        style: TextStyle(fontSize: 30.0),
       ),
     );
   }

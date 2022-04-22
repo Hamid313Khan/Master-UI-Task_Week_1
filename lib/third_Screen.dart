@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:ui_task/fourth_screen.dart';
-import 'package:ui_task/second_Screen.dart';
 import 'customWIdgets/picture_tile.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:ui_task/customWIdgets/custom_botton.dart';
@@ -48,7 +47,7 @@ class _ThirdScreenState extends State<ThirdScreen> {
               ),
               const Card(
                 child: ListTile(
-                  leading: Icon(Icons.place),
+                  leading: Icon(Icons.museum),
                   title: Text('This ia the most historical mesuem of all time'),
                 ),
               ),

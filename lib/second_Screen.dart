@@ -13,8 +13,8 @@ class SecondScreen extends StatelessWidget {
         child: Scaffold(
           bottomNavigationBar: NavigationBar(
             height: 70,
-            destinations: const[
-               NavigationDestination(
+            destinations: const [
+              NavigationDestination(
                 icon: Icon(
                   Icons.home,
                   size: 25,
@@ -22,10 +22,10 @@ class SecondScreen extends StatelessWidget {
                 ),
                 label: '',
               ),
-               NavigationDestination(
+              NavigationDestination(
                   icon: Icon(Icons.menu, size: 25, color: Colors.grey),
                   label: ''),
-               NavigationDestination(
+              NavigationDestination(
                   icon: Icon(Icons.settings, size: 25, color: Colors.grey),
                   label: ''),
             ],

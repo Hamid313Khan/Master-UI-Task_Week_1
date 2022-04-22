@@ -1,15 +1,13 @@
-
 import 'customWIdgets/picture_tile.dart';
 import 'package:flutter/material.dart';
 import 'customWIdgets/image_reused_card.dart';
 
-
 class FourthScreen extends StatefulWidget {
   const FourthScreen({Key? key}) : super(key: key);
-
   @override
   State<FourthScreen> createState() => _FourthScreenState();
 }
+
 class _FourthScreenState extends State<FourthScreen> {
   @override
   Widget build(BuildContext context) {
@@ -31,8 +29,7 @@ class _FourthScreenState extends State<FourthScreen> {
                   borderRadius: BorderRadius.circular(30.0),
                 ),
                 label: const Text('Search'),
-                prefixIcon: const
-                Icon(Icons.search),
+                prefixIcon: const Icon(Icons.search),
                 fillColor: const Color(0xffEDEEEE),
                 filled: true),
           ),
@@ -45,7 +42,8 @@ class _FourthScreenState extends State<FourthScreen> {
                 Container(
                   margin: const EdgeInsets.only(bottom: 400.0),
                   height: 50,
-                  child: const ImageReusedCard('images/image2.jpg', 'POLIN', '1987'),
+                  child: const ImageReusedCard(
+                      'images/image2.jpg', 'POLIN', '1987'),
                 ),
                 const SizedBox(
                   height: 40.0,
@@ -53,7 +51,8 @@ class _FourthScreenState extends State<FourthScreen> {
                 Container(
                   margin: const EdgeInsets.only(bottom: 400.0),
                   height: 50,
-                  child: const ImageReusedCard('images/image1.jpg', 'POLIN', '1987'),
+                  child: const ImageReusedCard(
+                      'images/image1.jpg', 'POLIN', '1987'),
                 ),
                 const SizedBox(
                   height: 40.0,
@@ -61,7 +60,8 @@ class _FourthScreenState extends State<FourthScreen> {
                 Container(
                   margin: const EdgeInsets.only(bottom: 400.0),
                   height: 50,
-                  child: const ImageReusedCard('images/image2.jpg', 'POLIN', '1987'),
+                  child: const ImageReusedCard(
+                      'images/image2.jpg', 'POLIN', '1987'),
                 ),
                 const SizedBox(
                   height: 40.0,
@@ -69,7 +69,8 @@ class _FourthScreenState extends State<FourthScreen> {
                 Container(
                   margin: const EdgeInsets.only(bottom: 400.0),
                   height: 50,
-                  child: const ImageReusedCard('images/image1.jpg', 'POLIN', '1987'),
+                  child: const ImageReusedCard(
+                      'images/image1.jpg', 'POLIN', '1987'),
                 ),
               ],
             ),
